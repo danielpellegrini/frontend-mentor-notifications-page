@@ -5,47 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="./public/style/style.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <script src="./public/script/script.js"></script>
   <title>Frontend Mentor | Notifications page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <header>
+      <div class="title-container">
+        <h1 class="title">Notifications</h1>
+        <span id="notifications-counter">3</span>
+      </div>
+      <small class="mark-all" id="is-hoverable">Mark all as read</small> 
+    </header>
 
-  Notifications 3
+    <section>
+      <div class="row to-read">
+          <div class="img-container">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="profile picture">
+          </div>
+          <div class="text-container">
+            <h4 id="is-hoverable" class="contact-name">Mark Webber</h4>
+            <span class="notification-text">reacted to your recent post</span>
+            <a class="post" id="is-hoverable" href="#"><b>My first tournament today!</b></a>
+            <p class="notification-time">1m ago</p>
+          </div>
+      </div>
+      <div class="row to-read">
+          <div class="img-container">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="profile picture">
+          </div>
+          <div class="text-container">
+            <h4 id="is-hoverable" class="contact-name">Angela Gray</h4>
+            <span class="notification-text">followed you</span>
+            <p class="notification-time">5m ago</p>
+          </div>
+      </div>
+      <div class="row to-read">
+          <div class="img-container">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="profile picture">
+          </div>
+          <div class="text-container">
+            <h4 id="is-hoverable" class="contact-name">Jacob Thompson</h4>
+            <span class="notification-text">has joined your group</span>
+            <a id="is-hoverable" class="group-name" href="#"><b>Chess Club</b></a>
+            <p class="notification-time">1day ago</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="img-container">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="profile picture">
+        </div>
+        <div class="text-container">
+          <h4 id="is-hoverable" class="contact-name">Rizky Hasanuddin</h4>
+          <span class="notification-text">sent you a private message</span>
+          <p class="notification-time">5 days ago</p>
+          <div id="message-in-container">
+            <p class="message-in">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="img-container">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="profile picture">
+        </div>
+        <div class="text-container">
+          <h4 id="is-hoverable" class="contact-name">Kimberly Smith</h4>
+          <span class="notification-text">commented on your picture</span>
+          <p class="notification-time">1 week ago</p>
+        </div>
+        <div class="square-img-container">
+          <img src="./assets/images/image-chess.webp" alt="profile picture">
+        </div>
+      </div>
+      <div class="row">
+        <div class="img-container">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="profile picture">
+        </div>
+        <div class="text-container">
+          <h4 id="is-hoverable" class="contact-name">Nathan Peterson</h4>
+          <span class="notification-text">reacted to your recent post</span>
+          <a class="post" id="is-hoverable" href="#"><b>5 end-game strategies to increase your win rate</b></a>
+          <p class="notification-time">2 weeks ago</p>
+        </div>
+      </div>
+      <div class="row">
+         <div class="img-container">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="profile picture">
+        </div>
+        <div class="text-container">
+          <h4 id="is-hoverable" class="contact-name">Anna Kim</h4>
+          <span class="notification-text">left the group</span>
+          <a id="is-hoverable" class="group-name" href="#"><b>Chess Club</b></a>
+          <p class="notification-time">2 weeks ago</p>
+        </div>
+      </div>
+    </section>
+    <span id="copyright">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </span>
+  </main>
 
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
