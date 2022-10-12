@@ -11,6 +11,7 @@
     --grayish-blue: hsl(219, 14%, 63%);
     --dark-grayish-blue: hsl(219, 12%, 42%);
     --very-dark-blue: hsl(224, 21%, 14%);
+    --toggle-display: inline-block;
 }
 
 * {
@@ -19,8 +20,14 @@
     margin: 0;
 }
 
-#is-hoverable:hover {
-    color: var(--blue);
+a {
+    text-decoration: none;
+}
+#row 
+.is-hoverable:hover,
+header 
+.is-hoverable:hover {
+    color: var(--blue) !important;
     filter: brightness(1.5);
     cursor: pointer;
     transition: all 300ms;
@@ -97,8 +104,9 @@ header
 
 main 
 header 
-.mark-all {
+#mark-all {
     color: var(--dark-grayish-blue);
+    cursor: pointer;
 }
 
 /* /Header  */
@@ -112,7 +120,7 @@ section {
 }
 
 section 
-.row {
+#row {
     display: flex;
     padding: 10px;
     margin-bottom: 10px;
@@ -121,14 +129,14 @@ section
 }
 
 section 
-.row 
+#row 
 .img-container {
     margin-right: 10px;
     align-self: flex-start;
 }
 
 section 
-.row 
+#row 
 .square-img-container {
     position: absolute;
     right: 10px;
@@ -138,44 +146,44 @@ section
 
 
 section 
-.row 
-.text-container {
+#row 
+.notification-container {
     font-size: 0.8rem;
     align-self: center;
     padding-right: 16px;
 }
 
 section 
-.row 
-.text-container 
+#row 
+.notification-container 
 .contact-name {
     display: inline-block;
-    transition: all 300ms;
+    transition: color 300ms;
     color: var(--very-dark-blue);
 }
 
 
 section 
-.row 
+#row 
 .notification-text {
     color: var(--grayish-blue);
     margin: 0 2px;
 }
 
 section 
-.row 
+#row 
 .post,
 section 
-.row 
+#row 
 .group-name {
     text-decoration: none;
     color: var(--dark-grayish-blue);
-    transition: all 300ms;
+    transition: color 300ms;
 }
 
 
 section 
-.row 
+#row 
 .notification-time {
     color: var(--grayish-blue);
     margin: 2px 0;
@@ -186,16 +194,33 @@ section
     background-color: var(--very-light-grayish-blue);
 }
 
+#toRead {
+    background-color: var(--very-light-grayish-blue);
+}
+
 section 
-.row 
+#row 
+.notification-container 
+#text-content::after {
+    content: "";
+    display: var(--toggle-display);
+    width: 7px;
+    height: 7px;
+    background-color: var(--red);
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+section 
+#row 
 img {
     max-width: 35px;
     height: auto;
 }
 
 section 
-.row 
-.text-container  
+#row 
+.notification-container  
 #message-in-container {
     background-color: none;
     border: 0.5px solid var(--very-dark-blue);
@@ -207,12 +232,12 @@ section
 }
 
 section 
-.row 
-.text-container  
+#row 
+.notification-container  
 #message-in-container:hover,
 section 
-.row 
-.text-container  
+#row 
+.notification-container  
 #message-in-container:focus {
     background-color: var(--light-grayish-blue-1);
     border: 0.5px solid var(--white);
@@ -220,8 +245,8 @@ section
 }
 
 section 
-.row 
-.text-container  
+#row 
+.notification-container  
 #message-in-container 
 .message-in {
     font-size: 14px;

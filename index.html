@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./public/style/style.css">
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
-  <script src="./public/script/script.js"></script>
+  <script src="./public/script/script.js" defer></script>
   <title>Frontend Mentor | Notifications page</title>
 
 </head>
@@ -19,51 +19,59 @@
     <header>
       <div class="title-container">
         <h1 class="title">Notifications</h1>
-        <span id="notifications-counter">3</span>
+        <span id="notifications-counter">0</span>
       </div>
-      <small class="mark-all" id="is-hoverable">Mark all as read</small> 
+      <small id="mark-all" class="is-hoverable">Mark all as read</small> 
     </header>
 
     <section>
-      <div class="row to-read">
+      <div id="row" class="to-read">
           <div class="img-container">
             <img src="./assets/images/avatar-mark-webber.webp" alt="profile picture">
           </div>
-          <div class="text-container">
-            <h4 id="is-hoverable" class="contact-name">Mark Webber</h4>
-            <span class="notification-text">reacted to your recent post</span>
-            <a class="post" id="is-hoverable" href="#"><b>My first tournament today!</b></a>
+          <div class="notification-container">
+            <div id="text-content">
+              <h4 class="is-hoverable" class="contact-name">Mark Webber</h4>
+              <span class="notification-text">reacted to your recent post</span>
+              <a class="post is-hoverable"  href="#"><b>My first tournament today!</b></a>
+            </div>
             <p class="notification-time">1m ago</p>
           </div>
       </div>
-      <div class="row to-read">
+      <div id="row" class="to-read">
           <div class="img-container">
             <img src="./assets/images/avatar-angela-gray.webp" alt="profile picture">
           </div>
-          <div class="text-container">
-            <h4 id="is-hoverable" class="contact-name">Angela Gray</h4>
-            <span class="notification-text">followed you</span>
-            <p class="notification-time">5m ago</p>
+          <div class="notification-container">
+            <div id="text-content">
+              <h4 class="is-hoverable" class="contact-name">Angela Gray</h4>
+              <span class="notification-text">followed you</span>
+            </div>
+              <p class="notification-time">5m ago</p>
           </div>
       </div>
-      <div class="row to-read">
+      <div id="row" class="to-read">
           <div class="img-container">
             <img src="./assets/images/avatar-jacob-thompson.webp" alt="profile picture">
           </div>
-          <div class="text-container">
-            <h4 id="is-hoverable" class="contact-name">Jacob Thompson</h4>
-            <span class="notification-text">has joined your group</span>
-            <a id="is-hoverable" class="group-name" href="#"><b>Chess Club</b></a>
+          <div class="notification-container">
+            <div id="text-content">
+              <h4 class="is-hoverable" class="contact-name">Jacob Thompson</h4>
+              <span class="notification-text">has joined your group</span>
+              <a class="is-hoverable" class="group-name" href="#"><b>Chess Club</b></a>
+            </div>
             <p class="notification-time">1day ago</p>
           </div>
       </div>
-      <div class="row">
+      <div id="row">
         <div class="img-container">
           <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="profile picture">
         </div>
-        <div class="text-container">
-          <h4 id="is-hoverable" class="contact-name">Rizky Hasanuddin</h4>
-          <span class="notification-text">sent you a private message</span>
+        <div class="notification-container">
+          <div id="text-content">
+            <h4 class="is-hoverable" class="contact-name">Rizky Hasanuddin</h4>
+            <span class="notification-text">sent you a private message</span>
+          </div>
           <p class="notification-time">5 days ago</p>
           <div id="message-in-container">
             <p class="message-in">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
@@ -72,45 +80,51 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div id="row">
         <div class="img-container">
           <img src="./assets/images/avatar-kimberly-smith.webp" alt="profile picture">
         </div>
-        <div class="text-container">
-          <h4 id="is-hoverable" class="contact-name">Kimberly Smith</h4>
-          <span class="notification-text">commented on your picture</span>
+        <div class="notification-container">
+          <div id="text-content">
+            <h4 class="is-hoverable" class="contact-name">Kimberly Smith</h4>
+            <span class="notification-text">commented on your picture</span>
+          </div>
           <p class="notification-time">1 week ago</p>
         </div>
         <div class="square-img-container">
           <img src="./assets/images/image-chess.webp" alt="profile picture">
         </div>
       </div>
-      <div class="row">
+      <div id="row">
         <div class="img-container">
           <img src="./assets/images/avatar-nathan-peterson.webp" alt="profile picture">
         </div>
-        <div class="text-container">
-          <h4 id="is-hoverable" class="contact-name">Nathan Peterson</h4>
-          <span class="notification-text">reacted to your recent post</span>
-          <a class="post" id="is-hoverable" href="#"><b>5 end-game strategies to increase your win rate</b></a>
+        <div class="notification-container">
+          <div id="text-content">
+            <h4 class="is-hoverable" class="contact-name">Nathan Peterson</h4>
+            <span class="notification-text">reacted to your recent post</span>
+            <a class="post" class="is-hoverable" href="#"><b>5 end-game strategies to increase your win rate</b></a>
+          </div>
           <p class="notification-time">2 weeks ago</p>
         </div>
       </div>
-      <div class="row">
+      <div id="row">
          <div class="img-container">
           <img src="./assets/images/avatar-anna-kim.webp" alt="profile picture">
         </div>
-        <div class="text-container">
-          <h4 id="is-hoverable" class="contact-name">Anna Kim</h4>
-          <span class="notification-text">left the group</span>
-          <a id="is-hoverable" class="group-name" href="#"><b>Chess Club</b></a>
+        <div class="notification-container">
+          <div id="text-content">
+            <h4 class="is-hoverable" class="contact-name">Anna Kim</h4>
+            <span class="notification-text">left the group</span>
+            <a class="is-hoverable" class="group-name" href="#"><b>Chess Club</b></a>
+          </div>
           <p class="notification-time">2 weeks ago</p>
         </div>
       </div>
     </section>
     <span id="copyright">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a class="is-hoverable" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="is-hoverable" href="https://danielpellegrini.github.io/portfolio/">danielpellegrini</a>.
     </span>
   </main>
 
