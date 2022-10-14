@@ -1,3 +1,4 @@
+"use strict";
 const notifications = (() => {
     
     let counter = 0;
