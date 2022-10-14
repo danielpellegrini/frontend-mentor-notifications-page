@@ -5,11 +5,11 @@ const notifications = (() => {
     const notificationsCounter = document.getElementById('notifications-counter');
     const rows = document.querySelectorAll('.row');
     const markAll = document.querySelector('#mark-all');
-    const getNotif = document.querySelectorAll('#text-content');
+    const getNotif = document.querySelectorAll('.text-content');
 
     for (let i = 0; i < rows.length; i++) {
         const row = rows[i];
-        const getNotif = row.querySelector('#text-content');
+        const getNotif = row.querySelector('.text-content');
         if(!row.classList.contains('to-read')) {
             getNotif.style.setProperty("--toggle-display", "none");
         } else {

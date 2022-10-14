@@ -211,7 +211,7 @@ section
 section 
 .row 
 .notification-container 
-#text-content::after {
+.text-content::after {
     content: "";
     display: var(--toggle-display);
     width: 7px;
@@ -233,7 +233,7 @@ section
 .notification-container  
 #message-in-container {
     background-color: none;
-    border: 0.5px solid var(--grayish-blue);
+    border: 0.5px solid var(--light-grayish-blue-2);
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
