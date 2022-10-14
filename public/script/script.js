@@ -2,7 +2,7 @@ const notifications = (() => {
     
     let counter = 0;
     const notificationsCounter = document.getElementById('notifications-counter');
-    const rows = document.querySelectorAll('#row');
+    const rows = document.querySelectorAll('.row');
     const markAll = document.querySelector('#mark-all');
     const getNotif = document.querySelectorAll('#text-content');
 
@@ -20,11 +20,6 @@ const notifications = (() => {
                 row.classList.remove('to-read');
                 getNotif.style.setProperty("--toggle-display", "none");
                 counter -= 1;
-                notificationsCounter.innerText = counter;
-            } else {
-                row.classList.add('to-read');
-                getNotif.style.setProperty("--toggle-display", "inline-block");
-                counter += 1;
                 notificationsCounter.innerText = counter;
             }
         }
@@ -44,6 +39,7 @@ const notifications = (() => {
     };
     
     markAll.addEventListener("click", markAllAsRead)
+    
 
 
 })();

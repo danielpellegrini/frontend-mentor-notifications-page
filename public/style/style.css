@@ -23,7 +23,7 @@
 a {
     text-decoration: none;
 }
-#row 
+.row 
 .is-hoverable:hover,
 header 
 .is-hoverable:hover {
@@ -36,15 +36,18 @@ header
 body {
     background-color: var(--very-light-grayish-blue);
     font-family: 'Plus Jakarta Sans', sans-serif;
-    padding: 30px;
 }
+
+/*  ------------------------ TO DO ------------------------  */
+                    /* check margin top */
+/*  ------------------------ TO DO ------------------------  */
 
 main {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 43rem;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 5rem auto;
     background-color: var(--white);
     border-radius: 15px;
     padding: 0 25px;
@@ -54,6 +57,7 @@ main {
 @media only screen and (max-width: 992px) and (min-width: 769px) {
     main {
         width: 60vw;
+        margin: 0 auto;
     }
 }
 
@@ -65,6 +69,7 @@ main {
         width: 100vw;
         height: 100vh;
         justify-content: space-evenly;
+        margin: 0 auto;
     }
 }
 
@@ -86,7 +91,7 @@ header
 main 
 header 
 .title {
-    font-size: 18px;
+    font-size: 22px;
     margin-right: 5px;
 }
 
@@ -95,11 +100,12 @@ header
 #notifications-counter {
     background-color: var(--blue);
     color: var(--white);
-    font-size: 12px;
-    padding: 2px 8px;
+    font-size: 14px;
+    padding: 3px 10px;
     border-radius: 4px;
     margin-left: 5px;
     font-weight: 100;
+    align-self: center;
 }
 
 main 
@@ -107,6 +113,7 @@ header
 #mark-all {
     color: var(--dark-grayish-blue);
     cursor: pointer;
+    font-size: 16px;
 }
 
 /* /Header  */
@@ -120,7 +127,7 @@ section {
 }
 
 section 
-#row {
+.row {
     display: flex;
     padding: 10px;
     margin-bottom: 10px;
@@ -129,14 +136,14 @@ section
 }
 
 section 
-#row 
+.row 
 .img-container {
     margin-right: 10px;
     align-self: flex-start;
 }
 
 section 
-#row 
+.row 
 .square-img-container {
     position: absolute;
     right: 10px;
@@ -146,15 +153,14 @@ section
 
 
 section 
-#row 
+.row 
 .notification-container {
-    font-size: 0.8rem;
     align-self: center;
     padding-right: 16px;
 }
 
 section 
-#row 
+.row 
 .notification-container 
 .contact-name {
     display: inline-block;
@@ -164,26 +170,32 @@ section
 
 
 section 
-#row 
+.row 
 .notification-text {
     color: var(--grayish-blue);
     margin: 0 2px;
 }
 
 section 
-#row 
+.row 
 .post,
 section 
-#row 
+.row 
 .group-name {
     text-decoration: none;
     color: var(--dark-grayish-blue);
     transition: color 300ms;
 }
 
+section 
+.row 
+.group-name {
+    color: var(--blue);
+}
+
 
 section 
-#row 
+.row 
 .notification-time {
     color: var(--grayish-blue);
     margin: 2px 0;
@@ -192,6 +204,7 @@ section
 section 
 .to-read {
     background-color: var(--very-light-grayish-blue);
+    cursor: pointer;
 }
 
 #toRead {
@@ -199,7 +212,7 @@ section
 }
 
 section 
-#row 
+.row 
 .notification-container 
 #text-content::after {
     content: "";
@@ -212,14 +225,14 @@ section
 }
 
 section 
-#row 
+.row 
 img {
-    max-width: 35px;
+    max-width: 45px;
     height: auto;
 }
 
 section 
-#row 
+.row 
 .notification-container  
 #message-in-container {
     background-color: none;
@@ -232,11 +245,11 @@ section
 }
 
 section 
-#row 
+.row 
 .notification-container  
 #message-in-container:hover,
 section 
-#row 
+.row 
 .notification-container  
 #message-in-container:focus {
     background-color: var(--light-grayish-blue-1);
@@ -245,15 +258,14 @@ section
 }
 
 section 
-#row 
+.row 
 .notification-container  
 #message-in-container 
 .message-in {
-    font-size: 14px;
     color: var(--grayish-blue);
 }
 
-#copyright {
+footer {
     text-align: center;
     font-size: 10px;
 }
